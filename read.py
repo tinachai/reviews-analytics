@@ -22,3 +22,10 @@ for d in data:
 print('一共有', len(new),'筆留言長度小於100') #推到最前面是等整個for loop 做完之後才印
 print(new[0])
 print(new[1])
+
+good = []
+for d in data:
+	if 'good' in d: #if good字串有在留言裡面 就把你裝進這個清單中
+		good.append(d)
+print('總共',len(good),'筆留言提到good')
+print(good[0])
